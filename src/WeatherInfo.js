@@ -19,13 +19,13 @@ export default function WeatherInfo(props) {
             <li>
               <span id="temperature"> {props.data.temperature}</span>
               <span id="conversion">
-                <a href="" id="celsius" className="active">
+                <span href="" id="celsius" className="active">
                   ºC
-                </a>{" "}
+                </span>{" "}
                 |
-                <a href="" id="fahr">
+                <span href="" id="fahr">
                   ºF
-                </a>
+                </span>
               </span>
             </li>
             <li id="description">{props.data.description}</li>
