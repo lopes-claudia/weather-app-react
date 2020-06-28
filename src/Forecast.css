@@ -1,0 +1,28 @@
+.forecast {
+  background-image: linear-gradient(-220deg, #acd4c8 0%, #f3d5ed 120%);
+  border-radius: 0px 0px 15px 15px;
+  padding: 15px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.max {
+  font-size: 15px;
+}
+
+.min {
+  font-size: 13px;
+}
+.forecastTemperature {
+  color: rgb(73, 73, 73);
+  line-height: 1;
+}
+
+#icon-forecast {
+  width: 60px;
+  margin: 0 auto;
+}
+.hourForecast {
+  padding: 0px;
+}

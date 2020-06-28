@@ -1,13 +1,18 @@
 import React from "react";
 import "./App.css";
-import Loader from "react-loader-spinner";
+import Weather from "./Weather";
+import Forecast from "./Forecast";
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Loader type="Rings" color="#008080" height={70} width={70} />
-      </header>
+    <div className="containers">
+      <Weather defaultCity="Lisbon" />
+      <Forecast />
+
+      <small>
+        This website was coded by Cláudia Lopes and is open-sourced on{" "}
+        <a href="https://github.com/lopes-claudia/weather-app-react">GitHub</a>
+      </small>
     </div>
   );
 }

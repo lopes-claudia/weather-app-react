@@ -1,0 +1,14 @@
+small {
+  color: #e3fdf5;
+  display: block;
+  text-align: right;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 100px auto;
+  background-repeat: no-repeat;
+  background-color: #383e3e;
+  color: teal;
+  max-width: 700px;
+}
