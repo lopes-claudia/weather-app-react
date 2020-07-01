@@ -33,10 +33,9 @@
 .cityInfo {
   padding: 0;
 }
-#icon {
-  width: 100px;
-  position: relative;
-  right: 10px;
+#weather-icon canvas {
+  margin-top: 15px;
+  margin-left: 5px;
 }
 
 .cityInfo li,
