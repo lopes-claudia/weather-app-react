@@ -57,11 +57,11 @@ export default function WeatherInfo(props) {
           <ul>
             <li>
               <i className="fas fa-tint"> </i>{" "}
-              <span id="humidity">{props.data.humidity}</span>%
+              <span id="humidity">Humidity: {props.data.humidity}</span>%
             </li>
             <li>
               <i className="fas fa-wind"></i>{" "}
-              <span id="wind">{props.data.wind}</span> km/h
+              <span id="wind">Wind: {props.data.wind}</span>km/h
             </li>
           </ul>
         </div>
