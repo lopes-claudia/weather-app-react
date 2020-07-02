@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import ReactAnimatedWeather from "react-animated-weather";
+import WeatherConversion from "./WeatherConversion";
 
 export default function WeatherInfo(props) {
   const codeMapping = {
@@ -39,16 +40,7 @@ export default function WeatherInfo(props) {
           <ul>
             <li id="city">{props.data.city}</li>
             <li>
-              <span id="temperature"> {props.data.temperature}</span>
-              <span id="conversion">
-                <span href="" id="celsius" className="active">
-                  ºC
-                </span>{" "}
-                |
-                <span href="" id="fahr">
-                  ºF
-                </span>
-              </span>
+              <WeatherConversion celsius={props.data.temperature} />
             </li>
             <li id="description">{props.data.description}</li>
           </ul>
