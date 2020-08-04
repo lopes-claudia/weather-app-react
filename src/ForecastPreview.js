@@ -11,22 +11,25 @@ export default function ForecastPreview(props) {
     return `${hours}:00`;
   }
 
-  function temperature() {
-    let temperature = Math.round(props.data.main.temp);
+  function temperatureCelsius() {
+    let max_temperature = Math.round(props.data.main.temp_max);
+    let min_temperature = Math.round(props.data.main.temp_min);
 
-    return `${temperature}°`;
+    return (
+      <div>
+        <strong>
+          <span className="max">{max_temperature}º</span>
+        </strong>
+        |<span className="min">{min_temperature}º</span>{" "}
+      </div>
+    );
   }
 
   return (
     <div className="col">
       <div className="hourForecast">{hours()}</div>
       <WeatherIcon code={props.data.weather[0].icon} />
-      <div className="forecastTemperature">
-        <strong>
-          <span className="max">{Math.round(props.data.main.temp)}º</span>
-        </strong>
-        |<span className="min">{Math.round(props.data.main.temp)}º</span>{" "}
-      </div>
+      <div className="forecastTemperature">{temperatureCelsius()}</div>
     </div>
   );
 }

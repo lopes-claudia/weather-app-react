@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Forecast.css";
 import Loader from "react-loader-spinner";
-import WeatherIcon from "./WeatherIcon";
 import ForecastPreview from "./ForecastPreview";
 import axios from "axios";
 
