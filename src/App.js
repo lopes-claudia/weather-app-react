@@ -8,8 +8,20 @@ export default function App() {
       <Weather defaultCity="Lisbon" />
 
       <small>
-        This website was coded by Cláudia Lopes and is open-sourced on{" "}
-        <a href="https://github.com/lopes-claudia/weather-app-react">GitHub</a>
+        This website was coded by{" "}
+        <a
+          href="https://www.linkedin.com/in/claudiasofia-lopes/"
+          target="blank"
+        >
+          Cláudia Lopes
+        </a>{" "}
+        and is open-sourced on{" "}
+        <a
+          href="https://github.com/lopes-claudia/weather-app-react"
+          target="blank"
+        >
+          GitHub
+        </a>
       </small>
     </div>
   );

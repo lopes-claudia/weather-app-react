@@ -59,15 +59,6 @@ export default function Weather(props) {
                   ></input>
                 </form>
               </div>
-              <div className="col-6">
-                <button
-                  type="button"
-                  className="btn btn-outline-primary btn-sm"
-                  id="currentLocalButton"
-                >
-                  Current location
-                </button>
-              </div>
             </div>
             <WeatherInfo data={weatherData} />
           </div>
