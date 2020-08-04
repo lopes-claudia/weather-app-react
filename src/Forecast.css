@@ -7,6 +7,11 @@
   margin: 0 auto;
 }
 
+.forecast canvas {
+  display: block;
+  margin: 8px auto;
+  width: 40px;
+}
 .max {
   font-size: 15px;
 }
@@ -19,10 +24,7 @@
   line-height: 1;
 }
 
-#icon-forecast {
-  width: 60px;
-  margin: 0 auto;
-}
 .hourForecast {
   padding: 0px;
+  font-size: 14px;
 }

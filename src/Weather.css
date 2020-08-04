@@ -90,13 +90,3 @@
   position: relative;
   bottom: 10px;
 }
-
-.active {
-  color: rgb(73, 73, 73);
-  cursor: default;
-}
-
-.active:hover {
-  text-decoration: none;
-  color: rgb(73, 73, 73);
-}

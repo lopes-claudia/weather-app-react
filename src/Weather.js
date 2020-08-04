@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import Loader from "react-loader-spinner";
+import Forecast from "./Forecast";
 
 import axios from "axios";
 
@@ -38,37 +39,40 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="container">
-        <div className="weather-app">
-          <div className="row">
-            <div className="col-6">
-              <form id="search-form" onSubmit={handleSubmit}>
-                <input
-                  type="search"
-                  placeholder=" Search city"
-                  id="cityInput"
-                  onChange={handleChange}
-                />
-                <input
-                  type="submit"
-                  className="btn btn-outline-success btn-sm"
-                  id="submitButton"
-                  value="Search"
-                ></input>
-              </form>
+      <div>
+        <div className="container">
+          <div className="weather-app">
+            <div className="row">
+              <div className="col-6">
+                <form id="search-form" onSubmit={handleSubmit}>
+                  <input
+                    type="search"
+                    placeholder=" Search city"
+                    id="cityInput"
+                    onChange={handleChange}
+                  />
+                  <input
+                    type="submit"
+                    className="btn btn-outline-success btn-sm"
+                    id="submitButton"
+                    value="Search"
+                  ></input>
+                </form>
+              </div>
+              <div className="col-6">
+                <button
+                  type="button"
+                  className="btn btn-outline-primary btn-sm"
+                  id="currentLocalButton"
+                >
+                  Current location
+                </button>
+              </div>
             </div>
-            <div className="col-6">
-              <button
-                type="button"
-                className="btn btn-outline-primary btn-sm"
-                id="currentLocalButton"
-              >
-                Current location
-              </button>
-            </div>
+            <WeatherInfo data={weatherData} />
           </div>
-          <WeatherInfo data={weatherData} />
         </div>
+        <Forecast city={weatherData.city} />
       </div>
     );
   } else {
